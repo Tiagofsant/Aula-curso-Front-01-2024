@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meu Primeiro JavaScript</title>
+  </head>
+  <br>
+    <h1 id="demonstrativo">Olá, eu sou o primeiro comando a ser alterado</h1>
+
+    <h4 id="demo">Esté é um paragráfo</h4>
+
+    <button type="button" onclick="MudaTexto()">Alterar Texto</button>
+
+    <!--  RETORNO DENTRO DO HTML -->
+    <button type="button" onclick="document.write(5 + 45)">
+      Alterar texto 2
+    </button>
+
+    <!--  RETORNO DENTRO DO HTML -->
+    <button type="button" onclick="window.print()">Printar tela</button>
+
+    <!--  RETORNO DE ALERTA -->
+    <button type="button" onclick="alerta()">VERIFICAR FUNCIONALIDADE</button>
+
+    <br />
+    <br />
+
+    <h2 id="nome1">Nome 1</h2>
+    <h2 id="nome2">Nome 2</h2>
+
+    <button type="button" onclick="mudaNome()">MUDA NOME</button>
+
+    <button type="button" onclick="escopo()">exemplo de escopo</button>
+
+    <hr />
+    <hr />
+
+    <h3 id="aritmetico1">Soma</h3>
+    <h3 id="aritmetico2">Multiplicação</h3>
+    <h3 id="aritmetico3">Divisão</h3>
+    <h3 id="aritmetico4">Resto da Divisão</h3>
+    <h3 id="aritmetico5">Incremento</h3>
+    <h3 id="aritmetico6">Decremento</h3>
+    <h3 id="aritmetico7">Resto da Divisão com retorno zerado</h3>
+    <h3 id="aritmetico8">Equação com Parenteses</h3>
+
+    <button type="submit" onclick="calcular()">
+      Clique aqui para rodar os calculos
+    </button>
+
+    <br/>
+    <br/>
+    <hr />
+
+    <!-- ---------------------------- SCRIPTS -------------------- -->
+
+    <script src="/js/scripts.js"></script>
+    <script src="/js/retornoDados.js"></script>
+    <script src="/js/caseSensitive.js"></script>
+    <script src="/js/operadoresAritmeticos.js"></script>
+    <script src="/js/escopoVariaveis.js"></script>
+
+    
+  </body>
+</html>
