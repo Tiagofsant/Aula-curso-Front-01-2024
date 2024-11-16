@@ -3,64 +3,39 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Meu Primeiro JavaScript</title>
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
-  <br>
-    <h1 id="demonstrativo">Olá, eu sou o primeiro comando a ser alterado</h1>
+  <body>
+    <div class="calculator">
+      <h3 class="title">Full Code Calculadora</h3>
+      <div class="display" id="display">0</div>
+      <div class="buttons">
+        <button class="btn" onclick="limparVisor()">C</button>
+        <button class="btn" onclick="adicionarValor('.')">.</button>
+        <button class="btn grid-2" onclick="deletarUltimo()">⌫</button>
 
-    <h4 id="demo">Esté é um paragráfo</h4>
+        <button class="btn" onclick="adicionarValor('7')">7</button>
+        <button class="btn" onclick="adicionarValor('8')">8</button>
+        <button class="btn" onclick="adicionarValor('9')">9</button>
+        <button class="btn" onclick="adicionarValor('/')">÷</button>
 
-    <button type="button" onclick="MudaTexto()">Alterar Texto</button>
+        <button class="btn" onclick="adicionarValor('4')">4</button>
+        <button class="btn" onclick="adicionarValor('5')">5</button>
+        <button class="btn" onclick="adicionarValor('6')">6</button>
+        <button class="btn" onclick="adicionarValor('*')">x</button>
 
-    <!--  RETORNO DENTRO DO HTML -->
-    <button type="button" onclick="document.write(5 + 45)">
-      Alterar texto 2
-    </button>
+        <button class="btn" onclick="adicionarValor('1')">1</button>
+        <button class="btn" onclick="adicionarValor('2')">2</button>
+        <button class="btn" onclick="adicionarValor('3')">3</button>
+        <button class="btn" onclick="adicionarValor('-')">-</button>
 
-    <!--  RETORNO DENTRO DO HTML -->
-    <button type="button" onclick="window.print()">Printar tela</button>
+        <button class="btn grid-2 equal-btn" onclick="calcular()">=</button>
+        <button class="btn" onclick="adicionarValor('0')">0</button>
 
-    <!--  RETORNO DE ALERTA -->
-    <button type="button" onclick="alerta()">VERIFICAR FUNCIONALIDADE</button>
-
-    <br />
-    <br />
-
-    <h2 id="nome1">Nome 1</h2>
-    <h2 id="nome2">Nome 2</h2>
-
-    <button type="button" onclick="mudaNome()">MUDA NOME</button>
-
-    <button type="button" onclick="escopo()">exemplo de escopo</button>
-
-    <hr />
-    <hr />
-
-    <h3 id="aritmetico1">Soma</h3>
-    <h3 id="aritmetico2">Multiplicação</h3>
-    <h3 id="aritmetico3">Divisão</h3>
-    <h3 id="aritmetico4">Resto da Divisão</h3>
-    <h3 id="aritmetico5">Incremento</h3>
-    <h3 id="aritmetico6">Decremento</h3>
-    <h3 id="aritmetico7">Resto da Divisão com retorno zerado</h3>
-    <h3 id="aritmetico8">Equação com Parenteses</h3>
-
-    <button type="submit" onclick="calcular()">
-      Clique aqui para rodar os calculos
-    </button>
-
-    <br/>
-    <br/>
-    <hr />
-
-    <!-- ---------------------------- SCRIPTS -------------------- -->
-
-    <script src="/js/scripts.js"></script>
-    <script src="/js/retornoDados.js"></script>
-    <script src="/js/caseSensitive.js"></script>
-    <script src="/js/operadoresAritmeticos.js"></script>
-    <script src="/js/escopoVariaveis.js"></script>
-
-    
+        <button class="btn" onclick="adicionarValor('+')">+</button>
+      </div>
+    </div>
+    <script src="scripts.js"></script>
   </body>
 </html>
