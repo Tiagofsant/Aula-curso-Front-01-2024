@@ -1,0 +1,65 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f2f2f2f2;
+}
+
+.container {
+  background: white;
+  border-radius: 10px;
+  width: 300px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.titulo {
+  color: #444;
+  text-align: center;
+}
+
+.visor {
+  background-color: #222;
+  color: white;
+  padding: 20px;
+  text-align: right;
+  font-size: 2rem;
+  border-bottom: 2px solid #444;
+}
+
+.botoes {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.botao {
+  font-size: 1em;
+  padding: 20px;
+  border: 1px solid gray;
+  background: #f9f9f9;
+  transition: background 0.2s;
+}
+
+.botao:hover {
+  background: #eaeaea;
+}
+
+.grid-2 {
+  grid-column: span 2;
+}
+
+.botao-igual {
+  background: green;
+  color: white;
+  font-weight: bold;
+}
+
+.botao-igual:hover {
+  background: rgb(1, 161, 1);
+}
+
+.delete-icon {
+  width: 30px;
+}
