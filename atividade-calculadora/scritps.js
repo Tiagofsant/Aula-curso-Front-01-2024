@@ -9,6 +9,7 @@ function adicionarValor(valor) {
     visor.textContent = valor;
   } else {
     visor.textContent += valor;
+  
   }
 }
 
